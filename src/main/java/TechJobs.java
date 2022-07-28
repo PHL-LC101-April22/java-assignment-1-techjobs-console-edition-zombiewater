@@ -121,10 +121,10 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         if (!someJobs.isEmpty()){
             for (HashMap<String, String> jobDesc : someJobs){
-                System.out.println("******");
+                System.out.println("*****");
                 for (Map.Entry<String, String> title: jobDesc.entrySet()) {
-                    System.out.println(title.getKey() + ": " + title.getValue() + "\n");
-                } System.out.println("******");
+                    System.out.println(title.getKey() + ": " + title.getValue());
+                } System.out.println("*****" + "\n");
             }
         } else {
             System.out.println("No Results");
